@@ -90,11 +90,7 @@ section.topo-do-site .flex{
     margin: 10px 0;
 }
 
-.typing {
-    display: inline-block;
-    border-right: 2px solid black;
-    animation: blink 0.8s infinite step-end;
-}
+
 
 @keyframes blink {
     50% {

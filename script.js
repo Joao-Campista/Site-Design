@@ -20,7 +20,7 @@ function type() {
         setTimeout(() => {
             isDeleting = true;
             type();
-        }, 1000);
+        }, 3000);
     } else if (isDeleting && currentText === "") {
         isDeleting = false;
         currentWordIndex = (currentWordIndex + 1) % words.length;
