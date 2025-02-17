@@ -1,0 +1,103 @@
+/* ESTILOS GERAIS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1850px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+/* ESTILO DO CABEÇALHO */
+
+header{
+    padding: 20px 2%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .btn-menu a{
+    font-family: "Roboto", serif;
+    color: #d6d6d6;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header .btn-menu a:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.logo img{
+    height: 30px;
+}
+
+/* ESTILO TOPO SITE */
+
+section.topo-do-site{
+    padding: 20px 2%;
+    height: 1vh;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.txt-topo-site h1, p{
+    color: #fff;
+    font-family: "Atkinson Hyperlegible Mono", serif;
+    font-weight: 100;
+}
+
+.txt-topo-site h1{
+    font-size: 60px;
+    margin-top: 340px;
+}
+
+.social-topo-site a{
+    text-decoration: none;
+}
+
+.txt-topo-site{
+    width: 55%;
+}
+
+.txt-topo-site p{
+    font-size: 18px;
+    margin-top: 200px;
+    width: 60%;
+}
+
+.social-topo-site ul li{
+    margin: 10px 0;
+}
+
+.typing {
+    display: inline-block;
+    border-right: 2px solid black;
+    animation: blink 0.8s infinite step-end;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
