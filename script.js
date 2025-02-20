@@ -45,7 +45,7 @@ next.addEventListener('click', function(){
 
 prev.addEventListener('click', function(){
     let items = document.querySelectorAll('.item')
-    document.querySelector('.slide').prepend(items[items.length - 1]) // here the length of items = 6
+    document.querySelector('.slide').prepend(items[items.length - 1])
 })
 
 
@@ -80,10 +80,10 @@ function animateText() {
     const scrollPosition = window.scrollY; // Posição atual do scroll
     
     // Verifica o quão longe o topo da seção está da parte superior da janela
-    const sectionVisibility = (scrollPosition + windowHeight - 1200 - sectionTop) / (sectionHeight + windowHeight);
+    const sectionVisibility = (scrollPosition + windowHeight - 1000 - sectionTop) / (sectionHeight + windowHeight);
     
     // O valor de sectionVisibility vai de 0 a 1 conforme o usuário rola a página
-    const opacity = Math.min(Math.max(sectionVisibility, 0), 1); // Garante que a opacidade esteja entre 0 e 1
+    const opacity = Math.min(Math.max(sectionVisibility, 0.1), 1); // Garante que a opacidade esteja entre 0 e 1
     
     // Aplica a opacidade calculada a todas as palavras
     spans.forEach((span, index) => {
