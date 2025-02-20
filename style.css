@@ -107,7 +107,7 @@ section.topo-do-site .flex{
 
 section.portfolio{
     padding: 20px 2%;
-    height: 90vh;
+    height: 95vh;
 }
 
 .portfolio>.interface{
@@ -131,7 +131,7 @@ section.portfolio{
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
-    border-radius: 20px;
+    border-radius: 5px;
     background-position: 50% 50%;
     background-size: cover;
     display: inline-block;
@@ -246,3 +246,53 @@ section.portfolio{
     background: #ababab;
     color: #000;
 } 
+
+/* ESTILOS SOBRE */
+
+section.sobre{
+    height: 95vh;
+    background-color: rgb(228, 222, 215);
+}
+
+section.sobre h4{
+    width: 40%;
+    font-family: "Atkinson Hyperlegible Mono", serif;
+    margin-top: 70px;
+    font-weight: 500;
+}
+
+.txt-sobre{
+    width: 90%;
+}
+
+.txt-sobre > p{
+    font-family: "Atkinson Hyperlegible Mono", serif;
+    margin-top: 70px;
+    color: #000;
+    font-size: 60px;
+}
+
+.txt-sobre > p > span{
+    color: #000;
+    opacity: 0.3;
+    display: inline-block;
+    transition: opacity .2s ease;
+}
+
+.txt-sobre > button{
+    margin-top: 40px;
+    height: 40px;
+    font-size: 18px;
+    background-color: #00000000;
+    border: 0;
+}
+
+.btn-sobre a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+section.test{
+    height: 200vh;
+}

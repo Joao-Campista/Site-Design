@@ -67,3 +67,43 @@ setInterval(simularClique, intervalo);
 
 
 type();
+
+
+
+// Função para animar o texto com base na posição do scroll
+function animateText() {
+    const section = document.querySelector('#sobre-fd');
+    const spans = document.querySelectorAll('.txt-fade span');
+    const sectionTop = section.getBoundingClientRect().top; // Posição do topo da seção
+    const sectionHeight = section.clientHeight; // Altura da seção
+    const windowHeight = window.innerHeight; // Altura da janela
+    const scrollPosition = window.scrollY; // Posição atual do scroll
+    
+    // Verifica o quão longe o topo da seção está da parte superior da janela
+    const sectionVisibility = (scrollPosition + windowHeight - 1200 - sectionTop) / (sectionHeight + windowHeight);
+    
+    // O valor de sectionVisibility vai de 0 a 1 conforme o usuário rola a página
+    const opacity = Math.min(Math.max(sectionVisibility, 0), 1); // Garante que a opacidade esteja entre 0 e 1
+    
+    // Aplica a opacidade calculada a todas as palavras
+    spans.forEach((span, index) => {
+      span.style.opacity = opacity; // A opacidade será ajustada com base na visibilidade da seção
+    });
+  }
+  
+  // Função para lidar com o evento de scroll
+  function handleScroll() {
+    animateText(); // Chama a animação de texto durante o scroll
+  }
+  
+  // Detecta o evento de scroll
+  window.addEventListener('scroll', handleScroll);
+  
+  // Chama a animação uma vez para inicializar
+  animateText();
+  
+
+  
+
+  
+  
