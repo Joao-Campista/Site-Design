@@ -295,6 +295,18 @@ section.sobre h4{
 }
 
 
-section.test{
-    height: 200vh;
+
+
+/* ESTILOS SERVIÇOS */
+
+section.servicos{
+    height: 95vh;
+}
+
+section.servicos h4{
+    width: 40%;
+    font-family: "Atkinson Hyperlegible Mono", serif;
+    margin-top: 70px;
+    font-weight: 500;
+    color: #fff;
 }
