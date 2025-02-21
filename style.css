@@ -310,3 +310,24 @@ section.servicos h4{
     font-weight: 500;
     color: #fff;
 }
+
+.bloco-servicos{
+    width: 90%;
+}
+
+.blc-servicos{
+    width: 550px;
+    height: 300px;
+    background-color: #969696;
+    margin-right: 50px;
+    transition: .5s ease;
+}
+
+.blc-servicos:hover{
+    background-color: #fff;
+}
+
+.l1-servicos, .l2-servicos{
+    display: flex;
+    margin-top: 70px;
+}
